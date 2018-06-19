@@ -1,0 +1,118 @@
+#footer {
+	position: relative;
+	background-color: #303030;
+	width: 100%;
+	border-top: 4px solid #7E5835;
+}
+
+#footer .title-footer {
+	margin-top: 15px;
+	margin-left: -15px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: white;
+}
+#footer .text-footer {
+	padding: 10px;
+	font-size: 12px;
+	font-family: 'PT Sans Caption', sans-serif;
+	color: #b5b5b5;
+}
+#footer .lien-nav {
+	color:#b5b5b5;
+}
+#footer .lien-footer {
+	padding: 10px;
+	font-size: 12px;
+	font-family: 'PT Sans Caption', sans-serif;
+	color: #b5b5b5;
+}
+#footer .lien-nav-footer {
+	margin-left: -30px;
+}
+
+#footer #socials .lien-facebook {
+	padding: 10px;
+	padding-right: 13px;
+	padding-left: 13px;
+	color:white;
+	background-color: #3b5998;
+	border-radius: 3px;
+}
+#footer #socials .lien-twitter {
+	padding: 10px;
+	color:white;
+	background-color: #1da1f2;
+	border-radius: 3px;
+}
+#footer #socials .lien-youtube {
+	padding: 10px;
+	padding-right: 11px;
+	padding-left: 11px;
+	color:white;
+	background-color: #ff0000;
+	border-radius: 3px;
+}
+#footer #socials .lien-skype {
+	padding: 10px;
+	color:white;
+	padding-right: 11px;
+	padding-left: 11px;
+	background-color: #0078ca;
+	border-radius: 3px;
+}
+#footer #socials a:hover {
+	color: #303030;
+}
+
+#footer #socials {
+	padding: 15px;
+}
+
+
+#footer a {
+	color: #798081;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+#footer a:hover {
+	text-decoration: none;
+	color: #7E5835;
+}
+
+#footer #footer-by {
+	background: rgba(0, 0, 0, 0.2);
+	padding: 10px 20px;
+	font-size: 15px;
+	overflow: hidden;
+}
+#footer #footer-by .left{
+	color:white
+}
+#footer #footer-by .right{
+	float: right; 
+	margin-right:50px; 
+	color:white
+}
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 767px) {
+
+	#footer #socials {
+	text-align:center
+	}
+	#footer .title-footer {
+	text-align:center
+	}
+}
+@media (max-width: 720px) {
+
+	#footer #footer-by {
+		font-size: 13px;
+	}
+}
+
+

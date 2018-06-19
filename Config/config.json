@@ -1,0 +1,62 @@
+{
+    "name": "Subtil",
+    "slug": "Subtil",
+    "author": "nivcoo",
+    "version": "1.0.0",
+    "apiID": 0,
+    "slider": false,
+    "configurations": {
+        "accueil": {
+            "ip": "play.mineweb.fr",
+            "slider": "https:\/\/proxy.spigotmc.org\/0e611b63a42d5819c04f30ac2aac04eaa1bd9cf6?url=http%3A%2F%2Fi.imgur.com%2FvjUyK1k.png",
+            "favicon": "",
+            "section": {
+                "titre": "Skyblock",
+                "img": "",
+                "desc": "Donne vite les quinze francs tout de suite apr\u00e8s cette sorte de superstition, dans la chemin\u00e9e inviterait \u00e0 croire qu'il."
+            }
+        },
+        "footer": {
+            "un": {
+                "titre": "Serveur",
+                "lien": "hhhhh"
+            },
+            "deux": {
+                "titre": "Service minecraft",
+                "lien": "ggggg"
+            },
+            "trois": {
+                "titre": "Fotnite",
+                "lien": "yyyy"
+            },
+            "infos": "Donne vite les quinze francs tout de suite apr\u00e8s cette sorte de superstition, dans la chemin\u00e9e inviterait \u00e0 croire qu'il."
+        },
+        "service": {
+            "un": {
+                "titre": "Titre 1",
+                "description": "Description 1",
+                "icon": "trophy",
+                "lien": "1"
+            },
+            "deux": {
+                "titre": "Titre 2",
+                "description": "Description 2",
+                "icon": "users",
+                "lien": "2"
+            },
+            "trois": {
+                "titre": "Titre 3",
+                "description": "Description 3",
+                "icon": "angle-up",
+                "lien": "3"
+            }
+        },
+        "votes": {
+            "un": "3 points boutique",
+            "deux": "2 points boutique",
+            "trois": "1 point boutique"
+        },
+        "logo": false
+    },
+    "supported": {}
+}

@@ -1,0 +1,78 @@
+#news {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+#boutique {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+#boutique .items-price {
+	margin-bottom: 20px;
+
+}
+
+#boutique .shop-profil {
+	margin-bottom: 20px;
+
+}
+
+#profil {
+	padding-bottom: 50px;
+}
+
+
+#news-page {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+#pages {
+	margin-bottom: 50px;
+}
+
+#news-page .title {
+	font-family: 'Francois One', sans-serif;
+	font-size: 20px
+}
+
+#news-page .news {
+	margin-bottom: 20px;
+}
+
+#services {
+	padding-bottom: 50px;
+	background: url(/theme/Subtil/img/banniere.png) no-repeat fixed top;
+	background-size: cover;
+	background-position: center;
+}
+
+#home-up .img1 {
+	background-size: cover;
+	background-position: center;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+#home-up {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.title {
+	font-family: 'Francois One', sans-serif;
+}
+
+#services .title-services {
+	background-color: #565555;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 50px;
+	font-family: 'Francois One', sans-serif;
+	font-size: 20px;
+	color: white;
+	border-right: 15px solid #303030;
+	border-left: 15px solid #303030;
+}
