@@ -30,6 +30,16 @@
 					<?php } ?>
 					<a href="#" data-toggle="modal" data-target="#cart-modal"
 					   class="btn  btn-danger btn-block"><?= $Lang->get('SHOP__BUY_CART') ?></a>
+					<?php if (!empty($vagoal)) {?>
+						<hr>
+						<div class="panel-heading text-center"><h3><b><?= $Lang->get('SHOP__CONFIG_GOAL_TITLE') ?></b></h3></div>
+						<div class="progress">
+							<div class="progress-bar-danger bg-info text-center" role="progressbar" style="<?= $vawidth ?>%">
+								<b><?= $vawidth ?>%</b>
+							</div>
+						</div>
+						<hr>
+					<?php } ?>
 					<?php } else { ?>
 					<button style="opacity: 1;" class="btn btn-block categories disabled">Vous êtes déconnecté.</button>
 					<?php } ?>

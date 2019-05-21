@@ -8,15 +8,15 @@
 	<meta name="author" content="nivcoo,Eywek">
 	<meta name="keywords" content="">
 	<title><?= $title_for_layout; ?> - <?= $website_name ?></title>
-	<link rel="icon" type="image/png" href="<?= $theme_config['accueil']->favicon ?>" />
+	<link rel="icon" type="image/png" href="<?= $theme_config['favicon_url'] ?>" />
 	<!-- CSS -->
 	<?= $this->Html->css('global.css'); ?>
 	<?= $this->Html->css('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'); ?>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
 
 	<!-- JavaScript -->
 	<?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?>

@@ -56,12 +56,31 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 							<div class="row">
 								<div class="box-body" style="">
 									<div class="form-group">
+										<input type="checkbox" id="navbar" name="navbar" value="<?= $config['navbar'] ?>" <?= (isset($config['navbar']) && $config['navbar'] == 'true') ? ' checked' : '' ?>>
+										<label for="navbar">Utiliser la nouvelle apparence de la navbar ?</label>
+										<script>
+											$('#navbar').change(function(){
+												if($('#navbar').is(':checked')) {
+													$('#navbar').attr('value', 'true');
+												} else {
+													$('#navbar').attr('value', 'false');
+												}
+											});
+											if($('#navbar').is(':checked')) {
+												$('#navbar').attr('value', 'true');
+											} else {
+												$('#navbar').attr('value', 'false');
+											}
+										</script>
+									</div>
+									<div class="form-group">
 										<label>IP du serveur</label>
 										<p>Entrez l'ip du serveur.</p>
 										<input type="text" value="<?= $config['accueil']->ip ?>"
 											   placeholder="Play.mineweb.com" class="form-control"
 											   name="accueil[ip]" cols="30" rows="10">
 									</div>
+									
 									<div class="form-group">
 										<label>Logo</label>
 										<p>Télécharger votre logo.</p>
@@ -77,9 +96,46 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 									<div class="form-group">
 										<label>Favicon du site</label>
 										<p>Entrez l'url du Favicon.</p>
-										<input type="text" value="<?= $config['accueil']->favicon ?>"
+										<input type="text" value="<?= $config['favicon_url'] ?>"
 											   placeholder="Favicon url" class="form-control"
-											   name="accueil[favicon]" cols="30" rows="10">
+											   name="favicon_url" cols="30" rows="10">
+									</div>
+									<?php if($config['navbar']): ?>
+									<div class="form-group">
+										<label>Slider et texte défilant</label>
+										<div class="col-md-12">
+											<p>Titre</p>
+											<input type="text" value="<?= $config['accueil']->title ?>"
+												   placeholder="Titre" class="form-control"
+												   name="accueil[title]" cols="30" rows="10">
+											<p>Sous-titre</p>
+											<input type="text" value="<?= $config['accueil']->subtitle ?>"
+												   placeholder="Image" class="form-control"
+												   name="accueil[subtitle]" cols="30" rows="10">
+											<p>Texte defilant</p>
+											<p style="color:red">Laisser vide pour désactiver</p>
+											<input type="text" value="<?= $config['accueil']->textslider ?>"
+												   placeholder="Description" class="form-control"
+												   name="accueil[textslider]" cols="30" rows="10">
+										</div>
+									</div>
+									<?php endif; ?>
+									<div class="form-group">
+										<label>Section</label>
+										<div class="col-md-12">
+											<p>Titre</p>
+											<input type="text" value="<?= $config['accueil']->section->titre ?>"
+												   placeholder="Titre" class="form-control"
+												   name="accueil[section][titre]" cols="30" rows="10">
+											<p>Image</p>
+											<input type="text" value="<?= $config['accueil']->section->img ?>"
+												   placeholder="Image" class="form-control"
+												   name="accueil[section][img]" cols="30" rows="10">
+											<p>Description</p>
+											<input type="text" value="<?= $config['accueil']->section->desc ?>"
+												   placeholder="Description" class="form-control"
+												   name="accueil[section][desc]" cols="30" rows="10">
+										</div>
 									</div>
 								</div>
 
@@ -158,6 +214,13 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 						<div class="tab-pane" id="config-services">
 							<div class="row">
 								<div class="box-body" style="">
+									<div class="form-group">
+										<label>Slider des services</label>
+										<p>Entrez l'url du Slider.</p>
+										<input type="text" value="<?= $config['accueil']->slider2 ?>"
+											   placeholder="Slider url" class="form-control"
+											   name="accueil[slider2]" cols="30" rows="10">
+									</div>
 									<div class="col-lg-4 col-sm-12">
 										<div class="form-group">
 											<label>Service 1</label>
@@ -167,8 +230,8 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 												   placeholder="Description"
 												   value="<?= $config['service']->un->description ?>">
 											<br>
-											<input type="text" class="form-control" name="service[un][image]"
-												   placeholder="Image" value="<?= $config['service']->un->image ?>">
+											<input type="text" class="form-control" name="service[un][icon]"
+												   placeholder="Icone" value="<?= $config['service']->un->icon ?>">
 											<input type="text" class="form-control" name="service[un][lien]"
 												   placeholder="Lien" value="<?= $config['service']->un->lien ?>">
 										</div>
@@ -182,8 +245,8 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 												   placeholder="Description"
 												   value="<?= $config['service']->deux->description ?>">
 											<br>
-											<input type="text" class="form-control" name="service[deux][image]"
-												   placeholder="Image" value="<?= $config['service']->deux->image ?>">
+											<input type="text" class="form-control" name="service[deux][icon]"
+												   placeholder="Icone" value="<?= $config['service']->deux->icon ?>">
 											<input type="text" class="form-control" name="service[deux][lien]"
 												   placeholder="Lien" value="<?= $config['service']->deux->lien ?>">
 										</div>
@@ -197,8 +260,8 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 												   placeholder="Description"
 												   value="<?= $config['service']->trois->description ?>">
 											<br>
-											<input type="text" class="form-control" name="service[trois][image]"
-												   placeholder="Image" value="<?= $config['service']->trois->image ?>">
+											<input type="text" class="form-control" name="service[trois][icon]"
+												   placeholder="Icone" value="<?= $config['service']->trois->icon ?>">
 											<input type="text" class="form-control" name="service[trois][lien]"
 												   placeholder="Lien" value="<?= $config['service']->trois->lien ?>">
 										</div>

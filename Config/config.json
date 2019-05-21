@@ -2,19 +2,23 @@
     "name": "Subtil",
     "slug": "Subtil",
     "author": "nivcoo",
-    "version": "1.0.0",
+    "version": "1.1.3",
     "apiID": 0,
     "slider": false,
     "configurations": {
+        "favicon_url":"",
         "accueil": {
             "ip": "play.mineweb.fr",
             "slider": "https:\/\/proxy.spigotmc.org\/0e611b63a42d5819c04f30ac2aac04eaa1bd9cf6?url=http%3A%2F%2Fi.imgur.com%2FvjUyK1k.png",
-            "favicon": "",
+            "title": "Bienvenue sur Subtil",
+            "subtitle": "Un serveur convivial ",
+            "textslider": "Amicitiarum ea hoc edendos esse quando digni ut loco suavissima dubitatio quando hoc vetustatem vetulis anteponendi novi anteponendi ea ea sit enim vetustatem num esse amicitia multos amicitiae rerum teneros.",
             "section": {
                 "titre": "Skyblock",
-                "img": "",
+                "img": "https:\/\/anacraft.fr\/images\/section.png",
                 "desc": "Donne vite les quinze francs tout de suite apr\u00e8s cette sorte de superstition, dans la chemin\u00e9e inviterait \u00e0 croire qu'il."
-            }
+            },
+            "slider2": ""
         },
         "footer": {
             "un": {

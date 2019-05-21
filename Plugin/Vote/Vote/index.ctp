@@ -38,12 +38,7 @@
 			<div id="website-error"></div>
 			<div class="row">
 
-				<?php
-					$i = 0;
-					foreach ($websitesByServers as $serverName => $websites) {
-				if ($i % 3 === 0) {
-				$i++;
-				?>
+				<?php foreach ($websitesByServers as $serverName => $websites) { ?>
 				<div class="col-md-4 " style="float: none;margin: 0 auto;">
 					<div class="card">
 						<div class="card-header">
@@ -58,7 +53,7 @@
 						</div>
 					</div>
 				</div>
-				<?php }} ?>
+				<?php } ?>
 			</div>
 		</div>
 	</div>

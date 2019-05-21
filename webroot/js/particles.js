@@ -1539,8 +1539,6 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   xhr.send();
 };
 
-var hour = new Date().getHours();
-if (hour >= 20 || hour <= 8) {
 	particlesJS('particles-js', {
 	  "particles": {
 		"number": {
@@ -1652,4 +1650,3 @@ if (hour >= 20 || hour <= 8) {
 	  "retina_detect": true
 	});
 	$("#particles-js").css("backgroundColor", "rgba(0, 0, 0, .3)");
-}

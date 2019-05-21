@@ -1,19 +1,27 @@
 <section id="home-up">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="thumbnail img1" style="background: url(<?= $theme_config['accueil']->section->img ?>) no-repeat;">
+		<div class="jumbotron jumbotron-fluid text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="thumbnail img1" style="background: url(<?= $theme_config['accueil']->section->img ?>) no-repeat;">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h1 class="display-3 title"><?= $theme_config['accueil']->section->titre ?></h1>
+						<p class="lead"><?= $theme_config['accueil']->section->desc ?></p>
+					</div>
 				</div>
-			</div>
-
-			<div class="col-md-8">
-				<h1 class="title"><?= $theme_config['accueil']->section->titre ?></h1>
-				<p class="lead"><?= $theme_config['accueil']->section->desc ?></p>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="services">
+<section id="services"
+	<?php if($theme_config['accueil']->slider2 != ""): ?>
+		style="background: url('<?= $theme_config['accueil']->slider2 ?>') no-repeat;background-size: cover;background-position: center;"
+	<?php else: ?>
+		style="background: url(theme/Subtil/img/banniere.png) no-repeat;background-size: cover;background-position: center;"
+	<?php endif; ?>>
 	<div class="title-services">
 		Services
 	</div>
@@ -68,12 +76,10 @@
 			<div class="col-lg-4 mb-4">
 				<div class="card h-100">
 					<h4 class="card-header title"><?= $v['News']['title'] ?></h4>
+					
 					<div class="card-body" style="overflow:hidden;">
 						<p class="card-text">
-							<?php
-								$msg = $v['News']['content'];
-								$nmsg = substr($msg, 0, 400);
-								echo $nmsg;?></p>
+							<?= $this->Text->truncate($v['News']['content'], 400, array('ellipsis' => '...', 'html' => true))?></p>
 					</div>
 					<div class="card-footer">
 						<a href="<?= $this->Html->url(array('controller' => 'blog', 'action' => $v['News']['slug'])) ?>"
