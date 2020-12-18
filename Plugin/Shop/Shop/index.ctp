@@ -27,17 +27,6 @@
                                 <a href="<?= $this->Html->url(array('controller' => 'c/' . $v['Category']['id'], 'plugin' => 'shop')) ?>"
                                    class="btn btn-block btn-secondary"><?= before_display($v['Category']['name']) ?></a>
                             <?php } ?>
-
-
-                            <?php
-                            $i = 0;
-                            foreach ($search_categories as $k => $v) {
-                                $i++;
-                                ?>
-                                <a class="btn btn-block btn-secondary"
-                                   href="<?= $this->Html->url(array('controller' => 'c/' . $v['Category']['id'], 'plugin' => 'shop')) ?>"
-                                   class="list-group-item<?= (isset($category) and $v['Category']['id'] == $category or !isset($category) and $i == 1) ? ' active' : ''; ?>"><?= before_display($v['Category']['name']) ?></a>
-                            <?php } ?>
                         </div>
                     </div>
                     <div class="card-footer">
