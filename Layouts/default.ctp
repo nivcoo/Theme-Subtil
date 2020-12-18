@@ -11,7 +11,7 @@
 	<link rel="icon" type="image/png" href="<?= $theme_config['favicon_url'] ?>" />
 	<!-- CSS -->
 	<?= $this->Html->css('global.css'); ?>
-	<?= $this->Html->css('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'); ?>
+	<?= $this->Html->css('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'); ?>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -19,8 +19,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
 
 	<!-- JavaScript -->
-	<?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?>
-	<?= $this->Html->script('bootstrap.min.js') ?>
+    <?= $this->Html->script('jquery-1.11.0.js') ?>
 	<?= $this->Html->script('jquery.cookie.js') ?>
 </head>
 <body>
@@ -34,6 +33,8 @@
 <?= $this->Html->script('app.js') ?>
 <?= $this->Html->script('form.js') ?>
 <?= $this->Html->script('notification.js') ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
     <?php if($isConnected) { ?>
         var notification = new $.Notification({
