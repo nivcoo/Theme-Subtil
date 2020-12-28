@@ -2,11 +2,9 @@
     "name": "Subtil",
     "slug": "Subtil",
     "author": "nivcoo",
-    "version": "1.1.4",
-    "apiID": 0,
+    "version": "1.2.0",
     "slider": false,
     "configurations": {
-        "favicon_url":"",
         "accueil": {
             "ip": "play.mineweb.fr",
             "slider": "https:\/\/proxy.spigotmc.org\/0e611b63a42d5819c04f30ac2aac04eaa1bd9cf6?url=http%3A%2F%2Fi.imgur.com%2FvjUyK1k.png",
