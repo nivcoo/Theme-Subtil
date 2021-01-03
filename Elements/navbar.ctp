@@ -25,6 +25,7 @@
 			</a>
 			<a class="nav-link" href="#notifications_modal" data-toggle="modal">
 				Mes notifications <i aria-hidden="true" class="fa fa-flag"></i>
+				<span class="notification-indicator"></span>
 			</a>
 			<a class="nav-link"
 			   href="<?= $this->Html->url(array('controller' => 'user', 'action' => 'logout', 'plugin' => null)) ?>">
